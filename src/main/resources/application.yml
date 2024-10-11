@@ -68,4 +68,17 @@ zoom:
     title: ZOOM
     description: ZOOM API
     version: 1.0.0
+    grouped-api:
+      basic:
+        group: "基础接口"
+        path:
+          - /auth/*
+          - /sys/*
+  operator:
+    log:
+      ignore:
+        - password,beforePassword,newPassword,useNewPassword,publicKey,privateKey,token
+        - metrics
+      desensitize:
+        - mobile,email,phone,apiSecret,apiSecretKey
 
