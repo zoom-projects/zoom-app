@@ -21,7 +21,8 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-  mapper-locations: classpath*:mapper/*Mapper.xml
+  mapper-locations:
+    - classpath*:com/hb0730/**/mapper/**/*Mapper.xml
   global-config:
     db-config:
       logic-delete-field: delFlag
@@ -81,4 +82,9 @@ zoom:
         - metrics
       desensitize:
         - mobile,email,phone,apiSecret,apiSecretKey
+  mybatis:
+    encrypt:
+      enable: true
+      key: 1234567890adbcde
+      iv: 1234567890hjlkew
 
