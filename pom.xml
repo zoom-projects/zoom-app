@@ -68,6 +68,11 @@
             <artifactId>zoom-sys</artifactId>
             <version>${zoom.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.hb0730</groupId>
+            <artifactId>zoom-opentelemetry-configuration</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

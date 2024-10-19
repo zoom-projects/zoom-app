@@ -89,6 +89,11 @@ zoom:
       enable: true
       key: 1234567890adbcde
       iv: 1234567890hjlkew
+
+  opentelemetry:
+    sofa:
+      rpc:
+        enabled: true
 sofa:
   boot:
     rpc:
@@ -97,4 +102,12 @@ sofa:
       bolt-port: 12200
     tracer:
       disable-digest-log: true
-
+otel:
+  sdk:
+    disabled: false
+  exporter:
+    otlp:
+      endpoint: http://localhost:5080/api/default
+      headers:
+        Authorization: Basic cm9vdEBleGFtcGxlLmNvbTp4Q1dtemlzMVpHTFZpSFZi
+        stream-name: default
