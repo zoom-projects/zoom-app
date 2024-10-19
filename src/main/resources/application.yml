@@ -89,4 +89,12 @@ zoom:
       enable: true
       key: 1234567890adbcde
       iv: 1234567890hjlkew
+sofa:
+  boot:
+    rpc:
+      registry-address: local://${user.home}/.sofa-boot/registry/zoom.reg
+      enable-auto-publish: true
+      bolt-port: 12200
+    tracer:
+      disable-digest-log: true
 
