@@ -61,6 +61,10 @@
             <groupId>com.hb0730</groupId>
             <artifactId>zoom-springdoc</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.hb0730</groupId>
+            <artifactId>zoom-opentelemetry-configuration</artifactId>
+        </dependency>
 
         <!--services-->
         <dependency>
@@ -68,11 +72,13 @@
             <artifactId>zoom-sys</artifactId>
             <version>${zoom.version}</version>
         </dependency>
-
         <dependency>
             <groupId>com.hb0730</groupId>
-            <artifactId>zoom-opentelemetry-configuration</artifactId>
+            <artifactId>zoom-goroku-app</artifactId>
+            <version>${zoom.version}</version>
         </dependency>
+
+
     </dependencies>
 
 </project>

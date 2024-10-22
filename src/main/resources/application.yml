@@ -77,6 +77,11 @@ zoom:
         path:
           - /auth/*
           - /sys/*
+      goroku:
+        group: "语录接口"
+        path:
+          - goroku/*
+
   operator:
     log:
       ignore:
@@ -111,3 +116,7 @@ otel:
       headers:
         Authorization: Basic cm9vdEBleGFtcGxlLmNvbTp4Q1dtemlzMVpHTFZpSFZi
         stream-name: default
+logging:
+  level:
+    com.alipay.sofa.rpc: debug
+    com.hb0730.zoom: debug
