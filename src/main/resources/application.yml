@@ -114,7 +114,7 @@ otel:
     otlp:
       endpoint: http://localhost:5080/api/default
       headers:
-        Authorization: Basic cm9vdEBleGFtcGxlLmNvbTp4Q1dtemlzMVpHTFZpSFZi
+        Authorization: Basic cm9vdEBleGFtcGxlLmNvbTpDb21wbGV4cGFzcyMxMjM=
         stream-name: default
 logging:
   level:
