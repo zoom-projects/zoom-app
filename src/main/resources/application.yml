@@ -132,7 +132,15 @@ zoom:
       rpc:
         enabled: true
   mail:
+    enable: false
+  social:
     enable: true
+    address: http://localhost:5173
+    resources:
+      github:
+        clientId: Ov*******H5*******8Z
+        clientSecret: c9*********5c*********0b*********1152882
+        redirectUri: ${zoom.social.address}/social/callback?source=github
 
 sofa:
   boot:
