@@ -112,6 +112,10 @@ zoom:
         group: "语录接口"
         path:
           - goroku/*
+      nav:
+        group: "导航接口"
+        path:
+          - /nav/*
 
   operator:
     log:
