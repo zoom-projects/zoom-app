@@ -145,6 +145,13 @@ zoom:
         clientId: Ov*******H5*******8Z
         clientSecret: c9*********5c*********0b*********1152882
         redirectUri: ${zoom.social.address}/social/callback?source=github
+  oss:
+    enabled: true
+    type: s3
+    s3:
+      access-key:
+      secret-key:
+
 
 sofa:
   boot:
@@ -167,3 +174,4 @@ logging:
   level:
     com.alipay.sofa.rpc: debug
     com.hb0730.zoom: debug
+
