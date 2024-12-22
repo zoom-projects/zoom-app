@@ -157,7 +157,7 @@ sofa:
   boot:
     rpc:
       #      registry-address: local://${user.home}/.sofa-boot/registry/zoom.reg
-      registry-address: nacos://127.0.0.1:8848/ce25dad9-c494-42be-b604-51989947375e
+      registry-address: nacos://127.0.0.1:8848/2a5c96be-97e5-4e36-99c6-18915867ab21
       virtual-host: 127.0.0.1
       enable-auto-publish: true
       bolt-port: 12200
