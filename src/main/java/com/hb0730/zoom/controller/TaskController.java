@@ -92,7 +92,7 @@ public class TaskController {
             file.transferTo(localFile);
             String filePath = SecurityUtils.getLoginUsername().orElseGet(() -> "summary") + "/imp";
             String objectKey = OssUtil.normalize(filePath + "/" + param.getFileName());
-            String url = ossStorage.uploadFile(objectKey, localFile);
+            String url = ossStorage.uploadFile(OssUtil.getObjectKey(objectKey), localFile);
             param.setFilePath(filePath);
             param.setFileUrl(url);
 
