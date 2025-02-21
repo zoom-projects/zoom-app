@@ -116,6 +116,10 @@ zoom:
         group: "导航接口"
         path:
           - /nav/*
+      resume:
+        group: "简历接口"
+        path:
+          - /resume/*
 
   operator:
     log:
