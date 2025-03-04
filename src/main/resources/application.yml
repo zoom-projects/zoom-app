@@ -120,6 +120,10 @@ zoom:
         group: "简历接口"
         path:
           - /resume/*
+      domain:
+        group: "域名接口"
+        path:
+          - /domain/*
 
   operator:
     log:
