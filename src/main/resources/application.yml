@@ -90,10 +90,16 @@ zoom:
     # api 前缀
     prefix: /zoom
     # 是否启用跨域
-    cors: true
+    cors:
+      enabled: true
+      allowed-headers: "*"
+      allowed-methods: "*"
+      allowed-origins: "*"
   # 是否启用缓存
   cache:
     enable: true
+    # 缓存前缀
+    prefix: "zoom"
   # swagger 配置
   swagger:
     author: hb0730
@@ -127,9 +133,11 @@ zoom:
 
   operator:
     log:
+      # 需要忽略的字段
       ignore:
         - password,beforePassword,newPassword,useNewPassword,publicKey,privateKey,token
         - metrics
+      # 需要脱敏的字段
       desensitize:
         - mobile,email,phone,apiSecret,apiSecretKey
   mybatis:
