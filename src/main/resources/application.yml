@@ -130,6 +130,10 @@ zoom:
         group: "域名接口"
         path:
           - /domain/*
+      poetry:
+        group: "诗词接口"
+        path:
+          - /poetry/*
 
   operator:
     log:
