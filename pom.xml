@@ -93,6 +93,11 @@
             <artifactId>zoom-domain-app</artifactId>
             <version>${zoom.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.hb0730</groupId>
+            <artifactId>zoom-poetry-app</artifactId>
+            <version>${zoom.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
